@@ -22,6 +22,8 @@
 """
 Filter rule to match source with a particular value.
 """
+from gramps.version import major_version
+
 register(RULE,
   id    = 'HasSeveralEvent',
   name  = _("Source matching parameters"),
@@ -29,7 +31,7 @@ register(RULE,
   version = '0.0.2',
   authors = ["Eric Doutreleau"],
   authors_email = ["eric@doutreleau.fr"],
-  gramps_target_version = '5.2',
+  gramps_target_version = major_version,
   status = STABLE,
   fname = "hasseveralevent.py",
   ruleclass = 'HasSeveralEvent',  # must be rule class name
